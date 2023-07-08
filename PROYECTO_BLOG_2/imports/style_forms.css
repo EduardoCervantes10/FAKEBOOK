@@ -1,0 +1,111 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(200, 200, 200);
+}
+
+body{
+    min-height: 100vh;
+    /*
+    background-image: url("https://images.alphacoders.com/546/546607.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    */
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+    url("https://th.bing.com/th/id/R.66180b2cd4c008840c8ac9cb60fee9de?rik=3JrGNimhf14HpQ&pid=ImgRaw&r=0") no-repeat center center fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/* FORMULARIO INDEX Y REGISTRAR*/
+.formulario{
+    margin-top: 25px;
+    width: 400px;
+    text-align: center;
+    padding: 20px 20px 30px 20px;
+    border-radius: 8px;
+    background: rgba(5, 7, 12, 0.5);
+    box-shadow: 0 1px 25px #c7a1cf;
+}
+
+/* INPUTS TYPE TEXT DE FORMULARIOS */
+.itxt{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #3b3b3b6b;
+    box-sizing: border-box;
+    background-color: rgba(5, 7, 12, 0.5);
+}
+
+/* INPUTS ESPECIALES DE NOMBRE Y APELLLIDO */
+.etxt{
+    width: 49%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #3b3b3b6b;
+    box-sizing: border-box;
+    background-color: rgba(5, 7, 12, 0.5);
+}
+/* DATE INPUT */
+.date{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #3b3b3b6b;
+    box-sizing: border-box;
+    background-color: rgba(5, 7, 12, 0.5);
+    color: rgb(136, 135, 135);
+}
+
+/* BOTONES DE LOS FORMULARIOS */
+.btn{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: rgba(109, 7, 146, 0.9);
+    color: rgb(200, 200, 200);
+}
+.btn:hover{
+    background-color: rgba(71, 0, 97, 0.9);
+}
+
+/* SPANS DE LOS FORMULARIOS*/
+span{
+    justify-content: left;
+}
+
+/* RADIO BUTTONS DE LOS FORMULARIOS */
+.r{
+    width: 32%;
+    border: 2px solid #3b3b3b6b;
+    padding: 8px 16px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+}
+.r:hover{
+    background-color: rgba(5, 7, 12, 0.5);
+}
+hr{
+    border: solid 1px whitesmoke;
+}
+
+/* FILE INPUT*/
+.iimg::-webkit-file-upload-button{
+    width: 50%;
+    padding: 6px 5px;
+    margin: 8px 0px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: rgba(237, 165, 226, 0.59);
+    color: rgb(200, 200, 200);
+}
+
+

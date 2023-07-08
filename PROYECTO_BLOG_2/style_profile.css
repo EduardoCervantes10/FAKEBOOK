@@ -1,0 +1,490 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(200, 200, 200);
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+    url("project_imgs/background5.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(25, 25, 25);
+    background-color: gray;
+    display: flow-root;
+    margin: 0px;
+}
+
+/*__________________________________________________*/
+/*              NAVIGATION VAR                      */
+/*__________________________________________________*/
+.navigationbar ul{
+    list-style-type: none;
+    background-color: rgba(72, 69, 110, 0.514);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.333);
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+.navigationbar li{
+    float:left;
+    padding-left: 5vh;
+    text-shadow: 1px 1px 9px black, -1px -1px 9px black;
+}
+#feed i{
+    float: left;
+    padding-left: 30vh;
+    text-shadow: 1px 1px 9px black, -1px -1px 9px black;
+    transition: color 0.5s;
+}
+#feed:hover i{
+  color: rgba(109, 7, 146, 0.9);
+}
+#ams i{
+  transition: color 0.5s;
+}
+#ams:hover i{
+  color: rgba(109, 7, 146, 0.9);
+}
+#addams i{
+  transition: color 0.5s;
+}
+#addams:hover i{
+  color: rgba(109, 7, 146, 0.9);
+}
+#admn i{
+  transition: color 0.5s;
+}
+#admn:hover i{
+  color: rgba(109, 7, 146, 0.9);
+}
+#logout{
+    float: right;
+    margin-right: 2vh;
+    text-shadow: 1px 1px 9px rgba(168, 0, 0, 0.5), -1px -1px 9px rgba(168, 0, 0, 0.5);
+}
+#logout:hover i{
+  color: rgba(199, 0, 0, 0.9);
+}
+.navigationbar a{
+  padding: 1vh;
+  padding-left: 3vh;
+  display: block;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+/*__________________________________________________*/
+/*          PARTE IZQUIERDA DEL PERFIL              */
+/*__________________________________________________*/
+
+.izquierda {
+    float: left;
+    width: 200px;
+    text-align: center;
+    margin-right: 20px;
+}
+/* img_prefilh Es el especial del perfil para que el usuario cambia imagen*/
+#img_perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 2px solid rgb(129, 129, 129);
+    box-shadow: 3px 3px 6px black, -3px -3px 6px black;
+}
+#img_perfilh {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 2px solid rgb(129, 129, 129);
+  box-shadow: 3px 3px 6px black, -3px -3px 6px black;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+#img_perfilh:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(106, 0, 181, 0.5);
+}
+#nombre {
+    font-size: 1.5em;
+    margin: 10px;
+    text-shadow: 1px 1px 9px black, -1px -1px 9px black;
+}
+.inf {
+    color: #dddddd;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+
+/*__________________________________________________*/
+/*      CENTRO DEL PERFIL (NUEVO POST)           */
+/*__________________________________________________*/
+
+.centro {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid rgb(130, 118, 172);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(11, 11, 11, 0.7);
+  }
+.form_new_post {
+    margin-bottom: 20px;
+  }
+.form_new_post input,
+.form_new_post textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(21, 21, 21, 0.8);
+  }
+  #btn_publicar {
+    background-color: rgba(109, 7, 146, 0.9);
+    color: #fff;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  #btn_publicar:hover {
+    background-color: rgba(71, 0, 97, 0.9);
+  }
+
+  /*__________________________________________________*/
+  /*      CENTRO DEL PERFIL (PUBLICACIONES)           */
+  /*__________________________________________________*/
+.show_post {
+    background-color: rgba(21, 21, 21, 0.8);
+    border: 1px solid rgb(171, 171, 171);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+#img_post {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid rgb(0, 0, 0);
+  }
+#created_at {
+    float: right;
+  }
+.show_post p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+.show_post h2 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+#trash {
+    float: right;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.5s;
+  }
+#trash:hover {
+    color: #f00;
+  }
+
+/*__________________________________________________*/
+/*      LISTA DE AMIGOS                             */
+/*__________________________________________________*/
+
+.show_friends {
+    width: calc(33.33% - 20px);
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(5, 7, 12, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid rgb(69, 69, 69);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    height: 100px; /* Altura fija para todas las tarjetas */
+    overflow: hidden; /* Para ajustar el contenido dentro de la tarjeta */
+    cursor: pointer; /* Cambia el cursor a un puntero */
+  }
+.show_friends:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgb(18, 144, 190);
+  }
+.show_friends a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+#img_friends {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid rgb(178, 178, 178);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+.show_friends small {
+    font-size: 1em;
+    text-shadow: 1px 1px 9px black, -1px -1px 9px black;
+    white-space: normal; /* Permite que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto adicional */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto se desborda */
+  }
+.show_friends small strong {
+    font-weight: bold;
+  }
+  /* Estilo para el título de la sección */
+h1 {
+    text-align: center;
+    padding: 20px;
+    text-shadow: 1px 1px 9px black, -1px -1px 9px black;
+    color: white;
+    font-size: 1.5em;
+  }
+  
+/*__________________________________________________*/
+/*          LISTAS AGREGAR AMIGOS                  */
+/*__________________________________________________*/ 
+.agregar{
+  margin-left: 40vh;
+  margin-right: 30vh;
+  border-left: 1px solid rgb(130, 118, 172);
+  border-right: 1px solid rgb(130, 118, 172);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: rgba(11, 11, 11, 0.7);
+}
+.agregar .show_people{
+  width:22vh;
+  min-width: 22vh;
+  max-width: 22vh;
+  height: 25vh;
+  min-height: 25vh;
+  max-height: 25vh;
+  overflow: hidden;
+  background-color: rgba(21, 21, 21, 0.8);
+  border: 1px solid rgb(69, 69, 69);
+  padding: 4vh;
+  margin-bottom: 2vh;
+  margin-left: 3vh;
+  margin-right: 3vh;
+}
+#nom_agregar{
+  float: left;
+}
+.show_people {
+    position: relative; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+} 
+.show_people:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgb(18, 144, 190);
+}
+#add_friends {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2em;
+    color: #696969;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background-color 0.5s ease;
+}
+#add_friends:hover {
+    background-color: #0498aba2;
+}
+#img_people {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px; /* Añadido */
+}
+#nom_people {
+    font-size: 1.2em;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+
+/* Estilo para el título de la sección */
+h1 {
+    text-align: center;
+    padding: 20px;
+    color: #c5c5c5;
+    font-size: 1.5em;
+  }
+
+/*__________________________________________________*/
+/*      ACTUALIZAR FOTO DE PERFIL                   */
+/*__________________________________________________*/
+.btn_publicar{
+  display: block;
+  margin-top: 0;
+  padding: 12px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(109, 7, 146, 0.9);
+  color: rgb(200, 200, 200);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#paso{
+  text-align: center;
+  font-size: large;
+}
+.btn_publicar:hover{
+  background-color: rgba(71, 0, 97, 0.9);
+}
+.file_container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 50vh;
+  min-width: 50vh;
+  max-height: 10vh;
+  min-height: 10vh;
+}
+.iimg::-webkit-file-upload-button{
+  display: block;
+  padding: 5px;
+  width: 50vh;
+  box-sizing: border-box;
+  background-color: rgba(109, 7, 146, 0.9);
+  color: rgb(200, 200, 200);
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+.iimg::-webkit-file-upload-button:hover{
+  background-color: rgba(71, 0, 97, 0.9);
+}
+.cancelar {
+  display: block;
+  text-align: center;
+  color: rgb(74, 74, 255);
+  text-decoration: none;
+  margin-top: 10px;
+}
+.cancelar:hover {
+  text-decoration: underline;
+}
+
+/*__________________________________________________*/
+/*      TABLAS DEL ADMINISTRADOR                    */
+/*__________________________________________________*/
+/* Estilo para las tablas del administrador */
+.centro_tabla{
+  margin: 0 auto;
+  max-width: 120vh;
+  padding: 20px;
+  border: 1px solid rgb(130, 118, 172);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(11, 11, 11, 0.7);
+}
+
+table {
+  color: #999999;
+  table-layout: fixed;
+  margin: 10vh auto 50vh auto;
+  box-shadow: 0 3px 50px rgb(12, 19, 156);
+  border-collapse: collapse;
+  width: 100vh;
+  background-color: #000000;
+}
+
+thead {
+  background: #1d1b1b;
+}
+
+th {
+  padding: 20px 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: solid 1px #000000;
+  text-align: center;
+  color: white;
+}
+
+td {
+  padding: 15px;
+  border: solid 1px #000000;
+  text-align: center;
+  background-color: #111111;
+  word-break: break-all; /* Nueva propiedad añadida */
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  background: #05a9e5;
+}
+
+td i {
+  padding: 1.5vh;
+  color: #cccccc;
+}
+
+td:hover{
+  background-color: #000000;
+}
+
+/* Estilos para los íconos en hover */
+#up:hover,
+#down:hover,
+#del:hover,
+#eye:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+#up:hover {
+  background-color: rgba(0, 138, 0, 0.5);
+}
+
+#down:hover {
+  background-color: rgba(255, 166, 0, 0.5);
+}
+
+#del:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+  
+#eye:hover {
+  background-color: rgba(130, 130, 130, 0.5);
+}
+
+/*__________________________________________________*/
+/*               FOOTER                             */
+/*__________________________________________________*/
+
+footer{
+    margin-top: 75vh;
+}
